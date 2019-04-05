@@ -85,7 +85,7 @@ def get_random_tags():
     return y
 
 
-def orient_generate(tags, now_time):
+def orient_generate(tags, now_time="201904031"):
     # for i, tags in enumerate([['blonde hair', 'twintails', 'blush', 'smile', 'ribbon', 'red eyes'],
     # ['silver hair', 'long hair', 'blush', 'smile', 'open mouth', 'blue eyes']]):
     z_samples = np.random.uniform(-1.0, 1.0, [batch_size, z_dim]).astype(np.float32)
