@@ -125,6 +125,7 @@ def orient_generate(tags, now_time="201904031"):
 
 def Generate(tags, now_time):
     pb_path = "./models/anime_acgan-60000.pb"
+
     with tf.Graph().as_default():
         output_graph_def = tf.GraphDef()
         with open(pb_path, "rb") as f:

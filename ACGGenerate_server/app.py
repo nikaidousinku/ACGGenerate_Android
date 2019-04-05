@@ -49,7 +49,8 @@ def getimg():
     message = request.get_data()
     Character = {'hair color': 'random', 'hair style': 'random', 'eyes color': 'random', 'blush': 'random',
                  'smile': 'random', 'open mouth': 'random', 'hat': 'random', 'ribbon': 'random', 'glasses': 'random'}
-    dirpath = basedir + "\data\images"
+    dirpath=os.path.join(basedir,'data','images')
+    #dirpath = basedir + "\data\images"
     message = message.decode('utf-8')
     message = message.split(",")
     Character['hair color'] = message[0].split(':')[-1]
